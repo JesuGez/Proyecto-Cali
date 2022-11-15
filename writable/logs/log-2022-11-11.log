@@ -1,0 +1,20 @@
+CRITICAL - 2022-11-11 13:07:05 --> Invalid file: tabs_aMutacion_view.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('tabs_aMutacion_view.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tabs_aMutacion_view', [], true)
+ 3 APPPATH\Controllers\Lider_mutacion.php(26): view('tabs_aMutacion_view')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Lider_mutacion->mostrar_tab()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lider_mutacion))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-11 14:07:21 --> Invalid file: td_aJuridico_view.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('td_aJuridico_view.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('td_aJuridico_view', [], true)
+ 3 APPPATH\Controllers\Analista_juridico.php(26): view('td_aJuridico_view')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Analista_juridico->mostrar_tab()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Analista_juridico))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

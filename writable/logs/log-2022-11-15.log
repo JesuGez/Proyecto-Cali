@@ -1,0 +1,47 @@
+ERROR - 2022-11-15 07:17:12 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp ult\htdocs\tareas\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp ult\htdocs\tareas\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'prediumtechtare...', 3306, '', 0)
+#1 C:\xampp ult\htdocs\tareas\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp ult\htdocs\tareas\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp ult\htdocs\tareas\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp ult\htdocs\tareas\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp ult\htdocs\tareas\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp ult\htdocs\tareas\app\Models\Lmutacion_model.php(13): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp ult\htdocs\tareas\app\Controllers\Lmutacion.php(17): App\Models\Lmutacion_model->get()
+#8 C:\xampp ult\htdocs\tareas\system\CodeIgniter.php(927): App\Controllers\Lmutacion->index()
+#9 C:\xampp ult\htdocs\tareas\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lmutacion))
+#10 C:\xampp ult\htdocs\tareas\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp ult\htdocs\tareas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp ult\htdocs\tareas\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp ult\\ht...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp ult\htdocs\tareas\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp ult\htdocs\tareas\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp ult\htdocs\tareas\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp ult\htdocs\tareas\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp ult\htdocs\tareas\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp ult\htdocs\tareas\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp ult\htdocs\tareas\app\Models\Lmutacion_model.php(13): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp ult\htdocs\tareas\app\Controllers\Lmutacion.php(17): App\Models\Lmutacion_model->get()
+#7 C:\xampp ult\htdocs\tareas\system\CodeIgniter.php(927): App\Controllers\Lmutacion->index()
+#8 C:\xampp ult\htdocs\tareas\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lmutacion))
+#9 C:\xampp ult\htdocs\tareas\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp ult\htdocs\tareas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp ult\htdocs\tareas\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp ult\\ht...')
+#12 {main}
+CRITICAL - 2022-11-15 07:17:12 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `lmutacion_radicaciones`', [], false)
+ 3 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\Lmutacion_model.php(13): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Lmutacion.php(17): App\Models\Lmutacion_model->get()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Lmutacion->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lmutacion))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
